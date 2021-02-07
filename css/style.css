@@ -69,6 +69,7 @@ img{
     justify-content: space-between;
 }
 
+.outer-shadow{
     box-shadow: var(--outer-shadow);
 }
 
