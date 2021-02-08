@@ -631,7 +631,7 @@ img {
   height: 100%;
   left: 50%;
   top: 0;
-  background-color: red;
+  background-color: var(--bg-black-100);
   position: absolute;
 }
 
@@ -653,4 +653,42 @@ img {
 .about-section .timeline .timeline-item-inner {
   padding: 30px;
   border-radius: 5px;
+  position: relative;
 }
+
+.about-section .timeline .timeline-item-inner .icon {
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-black-50); 
+  text-align: center;
+  border: 1px solid var(--bg-black-100);
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--skin-color);
+  position: absolute;
+  top: 18px;
+}
+
+.about-section .timeline .timeline-item:nth-child(odd) .icon {
+  right: -70px;
+}
+
+.about-section .timeline .timeline-item:nth-child(even) .icon {
+  left: -70px;
+}
+
+.about-section .timeline .timeline-item-inner span {
+  font-weight: 500;
+  color: var(--skin-color);
+  display: block;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+
+.about-section .timeline .timeline-item-inner h3 {}
+
+.about-section .timeline .timeline-item-inner h4 {}
+
+.about-section .timeline .timeline-item-inner p {}
+
