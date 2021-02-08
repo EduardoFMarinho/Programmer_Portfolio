@@ -656,6 +656,15 @@ img {
   position: relative;
 }
 
+.about-section .timeline .timeline-item-inner:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: red;
+  top: 37px;
+}
+
 .about-section .timeline .timeline-item-inner .icon {
   height: 40px;
   width: 40px;
@@ -701,5 +710,10 @@ img {
   margin: 0;
 }
 
-.about-section .timeline .timeline-item-inner p {}
+.about-section .timeline .timeline-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 15px 0 0;
+}
 
