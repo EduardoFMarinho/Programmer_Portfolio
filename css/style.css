@@ -563,6 +563,7 @@ img {
 .about-section .tab-content {
   flex: 0 0 100%;
   max-width: 100%;
+  display: none;
 }
 
 .about-section .skills {
@@ -615,6 +616,7 @@ img {
   margin-top: -40px;
 }
 
+.about-section .education,
 .about-section .experience {
   padding-bottom: 80px;
 }
@@ -661,8 +663,17 @@ img {
   position: absolute;
   width: 30px;
   height: 1px;
-  background-color: red;
+  background-color: var(--bg-black-100);
   top: 37px;
+  z-index: -1;
+}
+
+.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before {
+  right: -30px;
+}
+
+.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before {
+  left: -30px;
 }
 
 .about-section .timeline .timeline-item-inner .icon {
