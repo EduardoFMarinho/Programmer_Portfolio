@@ -50,7 +50,7 @@
                 if(target === item.getAttribute("data-category")){
                     
                 }
-            }
+            })
         }
     })
 
