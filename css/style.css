@@ -23,7 +23,6 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background-color: var(--bg-black-50);
-  overflow-y: hidden;
 }
 
 *:not(i) {
@@ -38,8 +37,7 @@ body {
   outline: none;
 }
 
-:before,
-::after {
+:before,:after {
   box-sizing: border-box;
 }
 
@@ -871,6 +869,10 @@ img {
   flex-wrap: wrap;
 }
 
+.portfolio-section .portfolio-item.hide {
+  display: none;
+}
+
 .portfolio-section .portfolio-item-inner {
   padding: 15px;
   border-radius: 5px;
@@ -933,6 +935,8 @@ img {
   height: 100%;
   z-index: 1000;
   overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .portfolio-popup .pp-details {
