@@ -873,6 +873,11 @@ img {
   display: none;
 }
 
+.portfolio-section .portfolio-item.show {
+  display: block;
+  animation: fadeInTop 0.5s ease;
+}
+
 .portfolio-section .portfolio-item-inner {
   padding: 15px;
   border-radius: 5px;
