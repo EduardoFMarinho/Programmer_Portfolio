@@ -87,7 +87,10 @@ function bodyScrollingToggle() {
     }
 
     function popupSlideshow() {
-        
+        const imgSrc = screenshots[slideIndex];
+        const popupImg = popup.querySelector(".pp-img");
+        /* Activate loader until the popupImg loaded */
+        popupImg.src = imgSrc
     }
 
 })();
