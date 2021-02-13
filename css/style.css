@@ -8,6 +8,7 @@
   --bg-black-900: #000000;
   --bg-black-100: #dddddd;
   --bg-black-50: #eff0f4;
+  --bg-opacity: rgba(255,255,255,0.5);
   --text-black-900: #000000;
   --text-black-700: #555555;
   --text-black-600: #666666;
@@ -952,6 +953,35 @@ img {
 .portfolio-popup.open {
   visibility: visible;
   opacity: 1;
+}
+
+.portfolio-popup .pp-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1005;
+  background-color: var(--bg-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.portfolio-popup .pp-loader.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-popup .pp-loader div {
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--skin-color);
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  animation: spin 2s linear infinite;
 }
 
 .portfolio-popup .pp-details {
