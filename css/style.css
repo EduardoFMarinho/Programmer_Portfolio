@@ -26,7 +26,7 @@ body {
   background-color: var(--bg-black-50);
 }
 
-body.stop-scrolling {
+body.hidden-scrolling {
   overflow-y: hidden
 }
 
@@ -991,6 +991,11 @@ img {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio-popup .pp-details.active {
+  opacity: 1;
 }
 
 .portfolio-popup .pp-details-inner {
@@ -1019,6 +1024,7 @@ img {
 
 .portfolio-popup .pp-title p span{
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .portfolio-popup .pp-project-details h3 {
@@ -1054,6 +1060,10 @@ img {
   font-weight: 600;
   color: var(--text-black-600);
   font-size: 16px;
+}
+
+.portfolio-popup .info ul li span {
+  font-weight: 400;
 }
 
 .portfolio-popup .indo ul li span {
