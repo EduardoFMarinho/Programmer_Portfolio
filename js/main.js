@@ -71,6 +71,14 @@ function bodyScrollingToggle() {
             screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
             // convert screenshots into array
             screenshots = screenshots.split(",");
+            if(screenshots.length === 1){
+                prevBtn.style.display = "none";
+                nextBtn.style.display = "none";
+            }
+            else {
+                prevBtn.style.display = "block";
+                nextBtn.style.display = "block";
+            }
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
@@ -97,7 +105,30 @@ function bodyScrollingToggle() {
             popup.querySelector(".pp-loader").classList.remove("active");
         }
         popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
-
     }
+
+    // next slide
+    nextBtn.addEventListener("click", () => {
+        if(slideIndex === screenshots.length-1){
+            slideIndex = 0
+        }
+        else {
+            slideIndex++;
+        }
+        popupSlideshow();
+        console.log("slideIndex:" + slideIndex);
+    })
+
+    // prev slide
+    prevBtn.addEventListener("click", () => {
+        if(slideIndex === 0){
+            slideIndex = screenshots.length-1
+        }
+        else {
+            slideIndex--;
+        }
+        popupSlideshow();
+        console.log("slideIndex:" + slideIndex);
+    })
 
 })();
