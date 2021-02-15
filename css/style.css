@@ -1191,3 +1191,10 @@ img {
 .portfolio-popup .pp-next {
   right: 15px;
 }
+
+/* Testimonial section */
+
+.testimonial-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
