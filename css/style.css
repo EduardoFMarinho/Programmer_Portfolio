@@ -1214,7 +1214,7 @@ img {
 .testimonial-section .testi-slider-container {
   display: flex;
   transition: margin 1s ease;
-  align-items: center;
+  align-items: cent;
 }
 
 .testimonial-section .testi-item {
@@ -1272,7 +1272,7 @@ img {
   width: 40px;
   color: var(--skin-color);
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 50%;
