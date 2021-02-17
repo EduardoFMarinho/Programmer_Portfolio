@@ -1,3 +1,26 @@
+
+/* Navigation Menu */
+/* Immediatly invoked function expression. Using arrow function. */
+
+(() => {
+
+const hamburgerBtn = document.querySelector(".hamburger-btn"),
+navMenu = document.querySelector(".nav-menu"),
+closeNavBtn = navMenu.querySelector(".close-nav-menu");
+
+hamburgerBtn.addEventListener("click", showNavMenu);
+closeNavBtn.addEventListener("click", hideNavMenu);
+
+function showNavMenu(){
+    navMenu.classList.add("open");
+}
+
+function hideNavMenu(){
+    navMenu.classList.remove("open");
+}
+
+})();
+
 /* About section tabs */
 /* Immediatly invoked function expression. Using arrow function. */
 
@@ -219,3 +242,18 @@ function bodyScrollingToggle() {
     }
     slider();
 })();
+
+/* Hide all sections except active */
+
+/* Immediatly invoked function expression - using arrow function */
+(() => {
+
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((section) => {
+        if(!section.classList.contains("active")){
+            section.classList.add("hide");
+        }
+    })
+
+})();
+
