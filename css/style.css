@@ -819,6 +819,7 @@ img {
   display: block;
   margin: 0 auto 30px;
   position: relative;
+  color: var(--text-black-600);
 }
 
 .service-section .service-item-inner .icon:after {
