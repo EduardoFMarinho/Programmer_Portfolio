@@ -27,6 +27,6 @@ This project was developed with the following technologies:
 
 # Gallery (Both Dark and Light mode)
 
-![Alt text](https://i.imgur.com/MII1P2X.png)
+![Alt text](https://i.imgur.com/aa63owu.png)
 
-![Alt text](https://i.imgur.com/TG1EV9u.png)
+![Alt text](https://i.imgur.com/H6xJlhH.png)
