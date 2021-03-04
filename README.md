@@ -1,7 +1,7 @@
 # 💻 Project
 In this project, I'm developing a portfolio for starting programmers.
 
-To achieve the final result, I used HTML, CSS and JavaScript.
+To achieve the final result, I used HTML, CSS, JavaScript and tons and tons of coffee :D
 
 # Getting Started
 
@@ -22,7 +22,8 @@ This project was developed with the following technologies:
 # Features
 
 - WhatsApp's API for the contact number. Meaning that people can text you via WhatsApp right away just by clicking the contact button.
-- Style switcher (multiple colors for demo showcases) and a Light and Dark mode as well. 
+- Style switcher (multiple colors for demo showcases) and a Light and Dark mode as well.
+- People can download your curriculum with a button.  
 
 # Gallery (Both Dark and Light mode)
 
