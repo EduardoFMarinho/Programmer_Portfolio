@@ -1,4 +1,7 @@
 # 💻 Project
+
+Live demo: https://eduardofmarinho.github.io/Programmer_Portfolio/
+
 In this project, I'm developing a portfolio for starting programmers.
 
 To achieve the final result, I used HTML, CSS, JavaScript and tons and tons of coffee :D
