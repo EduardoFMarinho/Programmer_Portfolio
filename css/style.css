@@ -1301,7 +1301,7 @@ img {
 
 .testimonial-section {
   padding: 80px 0 80px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .testimonial-section .testi-box {
@@ -1396,7 +1396,7 @@ img {
 
 .contact-section {
   padding: 80px 0 80px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .contact-section .contact-item {
@@ -1435,49 +1435,70 @@ img {
   word-break: break-word;
 }
 
-.contact-section .contact-form {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-top: 50px;
+
+/* Footer section */
+
+.footer{
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
-.contact-section .w-50 {
-  padding: 0 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
 
-.contact-section .input-group {
-  margin: 0 0 25px;
-  transition: all 0.3s ease;
-  border-radius: 30px;
-}
 
-.contact-section .input-group:after {
-  border-radius: 30px;
-}
 
-.contact-section .input-group .input-control {
-  height: 45px;
-  display: block;
-  width: 100%;
-  border-radius: 30px;
-  border: none;
-  background-color: transparent;
-  font-size: 16px;
-  padding: 0 15px;
-  color: var(--text-black-700);
-}
 
-.contact-section .input-group textarea.input-control {
-  height: 184px;
-  padding-top: 15px;
-  resize: none;
-}
 
-.contact-section .submit-btn {
-  flex: 0 0 100%;
-  max-width: 100%;
-  text-align: right;
-  padding: 0 15px;
-}
