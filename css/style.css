@@ -1429,11 +1429,9 @@ img {
 
 .contact-section .contact-item-inner p {
   font-size: 16px;
-  font-family: unset;
   color: var(--text-black-600);
   line-height: 26px;
   margin: 0;
-  word-break: break-word;
 }
 
 
