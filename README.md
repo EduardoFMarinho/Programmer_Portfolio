@@ -12,7 +12,7 @@ In order to open and edit this project, you need to have a Code Editor. (I used 
 
 If you wish to clone this repository using a terminal, type the following command:
 
-$ git clone https://github.com/EduardoFMarinho/Happy.git
+$ git clone https://github.com/EduardoFMarinho/Programmer_Portfolio
 
 # Technologies
 
